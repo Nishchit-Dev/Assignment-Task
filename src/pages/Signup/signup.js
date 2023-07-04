@@ -8,22 +8,15 @@ import {
   Container,
   Icon,
   ThemeProvider,
-  Link,
+  Link
 } from "@mui/material";
 import google from "../../assets/search.png";
-import Signup from "../../assets/signup.jpg";
+import SignupImg from '../../assets/signup.jpg'
 
 const font = "'Poppins', sans-serif";
-const theme = createTheme({
-  typography: {
-    fontFamily: font,
-    button: {
-      textTransform: "none",
-    },
-  },
-});
 
-const SignUpMUI = () => {
+
+const Signup = () => {
   return (
     <Stack>
       <Box textAlign="center" m="10px 0 " p="0 0 50px 0">
@@ -53,7 +46,7 @@ const SignUpMUI = () => {
         >
           <img
             width="170%"
-            src={Signup}
+            src={SignupImg}
             style={{ position: "absolute", top: "-105px", left: "-175px" }}
           />
         </Box>
@@ -130,10 +123,4 @@ const SignUpMUI = () => {
     </Stack>
   );
 };
-export default SignUpMUI;
-
-
-
-
-
-
+export default Signup

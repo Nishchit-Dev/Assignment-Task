@@ -23,7 +23,7 @@ import {
     },
   });
   
-  const HomeMUI = (user) => {
+  const Home = (user) => {
 
   
     return (
@@ -109,5 +109,5 @@ import {
     );
   };
   
-  export default HomeMUI;
+  export default Home;
   

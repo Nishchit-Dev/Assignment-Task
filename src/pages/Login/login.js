@@ -23,7 +23,7 @@ const theme = createTheme({
   },
 });
 
-const Test = () => {
+const Login = () => {
   const GIcon = (
     <Icon>
       <img src={"../../assets/google.svg"} />
@@ -130,4 +130,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Login;
