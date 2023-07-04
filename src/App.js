@@ -33,11 +33,11 @@ function App() {
         <Route
           exact
           path="/login"
-          element={user ? <Navigate to="/" /> : <Login />}
+          element={<Login />}
         />
         <Route
           path="/signup"
-          element={user ? <Navigate to="/" /> : <Signup />}
+          element={<Signup />}
         /> 
 
       </Routes>
