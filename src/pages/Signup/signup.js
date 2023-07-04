@@ -25,7 +25,7 @@ const theme = createTheme({
 
 const SignUpMUI = () => {
   return (
-    <Stack >
+    <Stack>
       <Box textAlign="center" m="10px 0 " p="0 0 50px 0">
         <Typography variant="h2" fontWeight={700} fontFamily={font}>
           Sign Up Form
@@ -84,7 +84,6 @@ const SignUpMUI = () => {
                 placeholder="Email"
                 label="Email"
                 variant="outlined"
-                
                 InputProps={{ style: { fontFamily: "Poppins" } }}
                 InputLabelProps={{ style: { fontFamily: "Poppins" } }}
               />
@@ -114,7 +113,6 @@ const SignUpMUI = () => {
                   background: "rgba(25, 118, 210, 0.08)",
                 }}
                 sx={{ "&:hover": { backgroundColor: "#000" } }}
-                
               >
                 <Typography fontFamily={font} textTransform="none">
                   Sign up with Google
