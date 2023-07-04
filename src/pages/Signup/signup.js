@@ -130,5 +130,10 @@ const SignUpMUI = () => {
     </Stack>
   );
 };
-
 export default SignUpMUI;
+
+
+
+
+
+
