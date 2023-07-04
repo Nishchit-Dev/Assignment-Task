@@ -23,7 +23,7 @@ const theme = createTheme({
   },
 });
 
-const Login = () => {
+const Test = () => {
   const GIcon = (
     <Icon>
       <img src={"../../assets/google.svg"} />
@@ -42,7 +42,7 @@ const Login = () => {
         display="flex"
         flexDirection="row"
         alignItems="center"
-    
+        backgroundColor="#fff"
         width="800px"
         overflow="hidden"
         m="20px"
@@ -69,7 +69,7 @@ const Login = () => {
           flexDirection="column"
           alignItems="center"
           justifyContent="center"
-          backgroundColor="#fff"
+          
         >
           <Stack p="30px 50px">
             <Box p="30px 0">
@@ -79,7 +79,7 @@ const Login = () => {
             </Box>
             <Stack gap="10px">
               <TextField
-                style={{ borderColor: "" }}
+                
                 placeholder="Email"
                 label="Email"
                 variant="outlined"
@@ -89,6 +89,7 @@ const Login = () => {
               <TextField
                 placeholder="Password"
                 label="Password"
+                type="password"
                 variant="outlined"
                 InputProps={{ style: { fontFamily: font } }}
                 InputLabelProps={{ style: { fontFamily: font } }}
@@ -130,4 +131,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Test;

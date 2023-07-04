@@ -29,7 +29,7 @@ const Signup = () => {
         display="flex"
         flexDirection="row"
         alignItems="center"
-        bgcolor="#fff"
+        backgroundColor="#fff"
         width="800px"
         overflow="hidden"
         m="20px"
@@ -83,6 +83,7 @@ const Signup = () => {
               <TextField
                 placeholder="Password"
                 label="Password"
+                type="password"
                 variant="outlined"
                 InputProps={{ style: { fontFamily: "Poppins" } }}
                 InputLabelProps={{ style: { fontFamily: "Poppins" } }}

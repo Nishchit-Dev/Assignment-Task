@@ -1,27 +1,17 @@
 import {
     Box,
     Stack,
-    createTheme,
+
     TextField,
     Button,
     Typography,
-    Container,
-    Icon,
-    ThemeProvider,
-    Link,
+
   } from "@mui/material";
   import profile from "../../assets/profile.jpg";
-  import google from "../../assets/search.png";
+  import ProfileImg from "../../assets/ProfileImg.png";
   
   const font = "'Poppins', sans-serif";
-  const theme = createTheme({
-    typography: {
-      fontFamily: font,
-      button: {
-        textTransform: "none",
-      },
-    },
-  });
+
   
   const Home = (user) => {
 
@@ -66,15 +56,17 @@ import {
             justifyContent="center"
           >
             <Stack p="30px 50px">
-              <Box p="30px 0">
+              <Box p="10px 0" textAlign={"center"}>
                 <Typography variant="h4" fontWeight={600} fontFamily={font}>
                   Profile
                 </Typography>
               </Box>
               <Stack gap="10px">
+                <Box  display={"flex"} justifyContent={"center"}>
+                  <img src={ProfileImg} width={"100px"} />
+                </Box>
                 <TextField
                 disabled
-                  style={{ borderColor: "" }}
                   defaultValue={user.name || "0xNishchit"}
                   label="Username"
                   variant="outlined"
@@ -90,13 +82,16 @@ import {
                   InputLabelProps={{ style: { fontFamily: font } }}
                 />
                 <Button
+                  onClick={()=>{window.open("/login")}}
                   style={{ background: "#FFC801" }}
                   TouchRippleProps={{ style: { color: "black" } }}
+                  
                 >
                   <Typography
                     fontFamily={font}
                     color={"black"}
                     textTransform="none"
+                    
                   >
                     LogOut
                   </Typography>

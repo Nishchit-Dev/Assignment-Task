@@ -8,8 +8,6 @@ import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
- 
- 
   const getUser = async () => {
     try {
       const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
@@ -30,7 +28,7 @@ function App() {
         <Route
           exact
           path="/"
-          element={ <Home user={'0xNishchit'} /> }
+          element={ <Home /> }
         />
         <Route
           exact
