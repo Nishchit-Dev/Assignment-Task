@@ -31,7 +31,7 @@ const Signup = () => {
             <Box className="contentHeadingWrapper">
               <Typography id="WrapperContentHeading">Create Account</Typography>
             </Box>
-            <Stack gap="10px">
+            <Stack className="WrapperForm">
               <TextField
                 placeholder="Username"
                 label="Username"

@@ -30,7 +30,7 @@ const Login = () => {
             <Box className="contentHeadingWrapper">
               <Typography id="WrapperContentHeading">Members Log in</Typography>
             </Box>
-            <Stack gap="10px">
+            <Stack className="WrapperForm">
               <TextField
                 className="InputTextField"
                 placeholder="Email"

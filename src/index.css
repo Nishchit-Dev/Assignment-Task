@@ -84,3 +84,11 @@ body {
   padding: 10px 0;
   text-align: center;
 }
+
+.WrapperForm{
+  gap:10px;
+}
+.WrapperFormContent{
+  display: flex;
+  justify-content: center;
+}

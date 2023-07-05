@@ -26,8 +26,8 @@ const Home = (user) => {
             <Box className="contentHeadingWrapper">
               <Typography id="WrapperContentHeading">Profile</Typography>
             </Box>
-            <Stack gap="10px">
-              <Box display={"flex"} justifyContent={"center"}>
+            <Stack className="WrapperForm">
+              <Box className="WrapperFormContent" >
                 <img src={"/assets/ProfileImg.png"} width={"100px"} />
               </Box>
               <TextField
