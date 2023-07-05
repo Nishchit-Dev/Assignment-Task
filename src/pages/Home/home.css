@@ -1,0 +1,14 @@
+.ProfileImage{
+    position: absolute;
+    top:-100px;
+    left:-85px;
+}
+#Logout{
+    background: #FFC801;
+    color:black;
+  transition: 0.4s;
+    opacity: 0.8;
+}
+#Logout:hover{
+    opacity: 1;
+}

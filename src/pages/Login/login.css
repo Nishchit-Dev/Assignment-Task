@@ -1,0 +1,16 @@
+#LoginImage {
+    position: absolute;
+    top: -100px;
+    left: -150px;
+    width: 150%;
+}
+
+#SignInWithGoogle {
+    opacity: 0.8;
+    background-color: rgba(25, 118, 210, 0.08);
+}
+
+#SignInWithGoogle:hover {
+    opacity: 1;
+    background-color: rgba(25, 118, 210, 0.08);
+}

@@ -1,0 +1,20 @@
+#SingupImage {
+    position: absolute;
+    top: -105px;
+    left: -175px;
+    width: 170%;
+}
+
+
+#SignUpWithGoogle {
+    opacity: 0.8;
+    background-color: rgba(25, 118, 210, 0.08);
+  transition: 0.4s;
+
+}
+
+#SignUpWithGoogle:hover {
+    opacity: 1;
+
+    background-color: rgba(25, 118, 210, 0.08);
+}

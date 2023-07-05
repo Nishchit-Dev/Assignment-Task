@@ -1,134 +1,70 @@
 import {
   Box,
   Stack,
-  createTheme,
   TextField,
   Button,
   Typography,
-  Container,
-  Icon,
-  ThemeProvider,
+  Grid,
   Link,
 } from "@mui/material";
-import login from "../../assets/login.jpg";
-import google from "../../assets/search.png";
+import "./login.css";
 
-const font = "'Poppins', sans-serif";
-const theme = createTheme({
-  typography: {
-    fontFamily: font,
-    button: {
-      textTransform: "none",
-    },
-  },
-});
-
-const Test = () => {
-  const GIcon = (
-    <Icon>
-      <img src={"../../assets/google.svg"} />
-    </Icon>
-  );
-
+const Login = () => {
   return (
-    <Stack >
-      <Box textAlign="center" m="10px 0 " p="0 0 50px 0">
-        <Typography variant="h2" fontWeight={700} fontFamily={font}>
-          Log in Form
-        </Typography>
+    <Box>
+      <Box className="Heading">
+        <Typography id="HeadingContent">Log in Form</Typography>
       </Box>
-      <Box
-        boxShadow={"2px 15px 106px #bebebe"}
-        display="flex"
-        flexDirection="row"
-        alignItems="center"
-        backgroundColor="#fff"
-        width="800px"
-        overflow="hidden"
-        m="20px"
-        borderRadius="20px"
-      >
+      <Box className="wrapper">
         <Box
-          flex="1.5 1"
-          display="flex"
-          backgroundColor="#fff"
-          position="relative"
+          className="contentImage"
+          // metric are different and are based on content
           top="-150px"
           left="20px"
           bottom="20px"
         >
-          <img
-            width="150%"
-            src={login}
-            style={{ position: "absolute", top: "-100px", left: "-150px" }}
-          />
+          <img id="LoginImage" src={"/assets/login.jpg"} />
         </Box>
-        <Box
-          flex="2 1"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-          
-        >
-          <Stack p="30px 50px">
-            <Box p="30px 0">
-              <Typography variant="h4" fontWeight={600} fontFamily={font}>
-                Members Log in
-              </Typography>
+        <Box className="contentForm">
+          <Grid className="formWrapper">
+            <Box className="contentHeadingWrapper">
+              <Typography id="WrapperContentHeading">Members Log in</Typography>
             </Box>
             <Stack gap="10px">
               <TextField
-                
+                className="InputTextField"
                 placeholder="Email"
                 label="Email"
-                variant="outlined"
-                InputProps={{ style: { fontFamily: font } }}
-                InputLabelProps={{ style: { fontFamily: font } }}
               />
               <TextField
                 placeholder="Password"
+                className="InputTextField"
                 label="Password"
                 type="password"
-                variant="outlined"
-                InputProps={{ style: { fontFamily: font } }}
-                InputLabelProps={{ style: { fontFamily: font } }}
               />
-              <Button
-                style={{ background: "#FFC801" }}
-                TouchRippleProps={{ style: { color: "black" } }}
-              >
-                <Typography
-                  fontFamily={font}
-                  color={"black"}
-                  textTransform="none"
-                >
-                  LogIn
-                </Typography>
+              <Button id="LSButton">
+                <Typography textTransform="none">LogIn</Typography>
               </Button>
               <Box textAlign="center">
                 <span>or</span>
               </Box>
               <Button
-                startIcon={<img src={google} width={"24px"} />}
-                style={{ background: "rgba(25, 118, 210, 0.08)" }}
-                sx={{ "&:hover": { backgroundColor: "#fefefe" } }}
+                id="SignInWithGoogle"
+                startIcon={<img src={"/assets/google.png"} width={"24px"} />}
               >
-                <Typography fontFamily={font} textTransform="none">
-                  SignIn with Google
-                </Typography>
+                <Typography textTransform="none">SignIn with Google</Typography>
               </Button>
               <Box textAlign="center">
-                <Typography fontFamily={font}>
+                <Typography>
                   New Here? <Link href="/signup">Sign Up</Link>
                 </Typography>
               </Box>
             </Stack>
-          </Stack>
+          </Grid>
         </Box>
       </Box>
-    </Stack>
+    </Box>
   );
 };
 
-export default Test;
+export default Login;
